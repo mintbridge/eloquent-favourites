@@ -1,4 +1,4 @@
-# Eloquent Auditing
+# Eloquent Favourites
 
 Laravel 5 package that allows users to favourite eloquent models.
 
