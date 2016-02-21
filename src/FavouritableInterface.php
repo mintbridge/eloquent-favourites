@@ -6,7 +6,7 @@ interface FavouritableInterface
 {
     public function favourites();
 
-    public function getFavouriteableId();
+    public function getFavouritableId();
 
-    public function getFavouriteableType();
+    public function getFavouritableType();
 }

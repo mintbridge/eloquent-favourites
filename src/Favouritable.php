@@ -17,7 +17,7 @@ trait Favouritable
     /**
      * Get the favouritable id for the model
      */
-    public function getFavouriteableId()
+    public function getFavouritableId()
     {
         return $this->id;
     }
@@ -25,7 +25,7 @@ trait Favouritable
     /**
      * Get the favouritable type for the model
      */
-    public function getFavouriteableType()
+    public function getFavouritableType()
     {
         return get_class($this);
     }
