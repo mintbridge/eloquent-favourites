@@ -3,7 +3,7 @@ namespace Mintbridge\EloquentFavourites\Test;
 
 use Mintbridge\EloquentFavourites\FavouritesManager;
 
-class FavouritesTest extends \PHPUnit_Framework_TestCase
+class FavouritesManagerTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var \Mintbridge\EloquentFavourites\FavouritesManager

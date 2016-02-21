@@ -2,8 +2,8 @@
 
 namespace Mintbridge\EloquentFavourites;
 
-use Config;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Config;
 
 class Favourite extends Model
 {
