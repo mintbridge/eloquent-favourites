@@ -4,7 +4,6 @@ namespace Mintbridge\EloquentFavourites;
 
 use Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
-use Mintbridge\EloquentFavourites\Activity;
 use Mintbridge\EloquentFavourites\FavouritableInterface;
 
 class FavouritesManager
@@ -74,9 +73,9 @@ class FavouritesManager
      */
     private function query(FavouritableInterface $model, Authenticatable $user)
     {
-        $query = Favourite::where(Favourite::ATTR_FAVOURITABLE_ID, '=', $model->id)
-            ->where(Favourite::ATTR_FAVOURITABLE_TYPE, '=', get_class($model))
-            ->where(Favourite::ATTR_USER_ID, '=', $user->id);
+        $query = Favourite::where(Favourite::ATTR_FAVOURITABLE_ID, '=', $model->getFavouriteableId())
+            ->where(Favourite::ATTR_FAVOURITABLE_TYPE, '=', $model->getFavouriteableType())
+            ->where(Favourite::ATTR_USER_ID, '=', $user->getAuthIdentifier());
 
         return $query;
     }

@@ -51,6 +51,8 @@ class FavouritesServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['favourites'];
+        return [
+            'favourites'
+        ];
     }
 }
