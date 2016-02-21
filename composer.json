@@ -11,9 +11,11 @@
     ],
     "require": {
         "php": ">=5.4.0",
+        "illuminate/database": "5.*",
         "illuminate/support": "5.*"
     },
     "require-dev": {
+        "mockery/mockery": "^0.9.4",
         "phpunit/phpunit": "4.2.*",
         "scrutinizer/ocular": "^1.1"
     },
