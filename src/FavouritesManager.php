@@ -73,8 +73,8 @@ class FavouritesManager
      */
     private function query(FavouritableInterface $model, Authenticatable $user)
     {
-        $query = Favourite::where(Favourite::ATTR_FAVOURITABLE_ID, '=', $model->getFavouriteableId())
-            ->where(Favourite::ATTR_FAVOURITABLE_TYPE, '=', $model->getFavouriteableType())
+        $query = Favourite::where(Favourite::ATTR_FAVOURITABLE_ID, '=', $model->getFavouritableId())
+            ->where(Favourite::ATTR_FAVOURITABLE_TYPE, '=', $model->getFavouritableType())
             ->where(Favourite::ATTR_USER_ID, '=', $user->getAuthIdentifier());
 
         return $query;
