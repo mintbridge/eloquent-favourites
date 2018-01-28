@@ -20,7 +20,7 @@ Once installed add the service provider and facade to your app config
 
 'aliases' => [
     '...',
-    'Sentiment' => 'Mintbridge\EloquentFavourites\FavouritesFacade',
+    'Favourites' => 'Mintbridge\EloquentFavourites\FavouritesFacade',
 ];
 ```
 
