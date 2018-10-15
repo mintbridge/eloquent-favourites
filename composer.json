@@ -29,5 +29,15 @@
             "Mintbridge\\EloquentFavourites\\Test\\": "tests/"
         }
     },
+	"extra": {		
+        "laravel": {
+            "providers": [
+                "Mintbridge\\EloquentFavourites\\FavouritesServiceProvider"
+            ],
+            "aliases": {
+                "Favourites": "Mintbridge\\EloquentFavourites\\FavouritesFacade"
+            }
+        }
+	},
     "minimum-stability": "stable"
 }
