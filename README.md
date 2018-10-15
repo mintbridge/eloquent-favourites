@@ -23,6 +23,7 @@ Once installed add the service provider and facade to your app config
     'Favourites' => 'Mintbridge\EloquentFavourites\FavouritesFacade',
 ];
 ```
+Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
 
 You'll also need to publish and run the migration in order to create the database table.
 ```
